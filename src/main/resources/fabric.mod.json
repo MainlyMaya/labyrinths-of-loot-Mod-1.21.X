@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "labyrinths_of_loot",
+	"version": "${version}",
+	"name": "Labyrinths Of Loot",
+	"description": "Delve into new structures and loot the secrets they hold!",
+	"authors": [
+		"Color",
+		"MainlyMaya"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/labyrinths_of_loot/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.colormaya.labyrinths_of_loot.LabyrinthsOfLoot"
+		],
+		"fabric-datagen": [
+			"net.colormaya.labyrinths_of_loot.LabyrinthsOfLootDataGenerator"
+		],
+		"client": [
+			"net.colormaya.labyrinths_of_loot.LabyrinthsOfLootClient"
+		]
+	},
+	"mixins": [
+		"labyrinths_of_loot.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

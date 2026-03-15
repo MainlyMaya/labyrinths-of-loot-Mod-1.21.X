@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "net.colormaya.labyrinths_of_loot.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
