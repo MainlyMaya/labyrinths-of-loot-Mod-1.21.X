@@ -19,15 +19,15 @@ import net.minecraft.util.Identifier;
         public static final Block CHISELED_LIMESTONE_BRICKS = registerBlock("chiseled_limestone_bricks",
                 new Block(AbstractBlock.Settings.create().requiresTool().strength(1.5F, 2.0F).sounds(BlockSoundGroup.DRIPSTONE_BLOCK).mapColor(MapColor.TERRACOTTA_BROWN)));
         public static final Block DUNGEON_STONE = registerBlock("dungeon_stone",
-                new Block(AbstractBlock.Settings.create().requiresTool().strength(3.2F, 6.0F).sounds(BlockSoundGroup.LODESTONE).mapColor(MapColor.TERRACOTTA_BLACK)));
+                new Block(AbstractBlock.Settings.create().requiresTool().strength(3.2F, 6.0F).sounds(BlockSoundGroup.BASALT).mapColor(MapColor.TERRACOTTA_BLACK)));
         public static final Block DUNGEON_STONE_BRICKS = registerBlock("dungeon_stone_bricks",
-                new Block(AbstractBlock.Settings.create().requiresTool().strength(3.8F, 6.0F).sounds(BlockSoundGroup.LODESTONE).mapColor(MapColor.TERRACOTTA_BLACK)));
+                new Block(AbstractBlock.Settings.create().requiresTool().strength(3.8F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS).mapColor(MapColor.TERRACOTTA_BLACK)));
         public static final Block DUNGEON_COBBLE_ = registerBlock("dungeon_cobble",
-                new Block(AbstractBlock.Settings.create().requiresTool().strength(3.8F, 6.0F).sounds(BlockSoundGroup.LODESTONE).mapColor(MapColor.TERRACOTTA_BLACK)));
+                new Block(AbstractBlock.Settings.create().requiresTool().strength(3.8F, 6.0F).sounds(BlockSoundGroup.BASALT).mapColor(MapColor.TERRACOTTA_BLACK)));
         public static final Block MOSSY_DUNGEON_STONE_BRICKS = registerBlock("mossy_dungeon_stone_bricks",
-                new Block(AbstractBlock.Settings.create().requiresTool().strength(3.8F, 6.0F).sounds(BlockSoundGroup.LODESTONE).mapColor(MapColor.TERRACOTTA_BLACK)));
+                new Block(AbstractBlock.Settings.create().requiresTool().strength(2.8F, 4.0F).sounds(BlockSoundGroup.NETHER_BRICKS).mapColor(MapColor.TERRACOTTA_BLACK)));
         public static final Block MOSSY_DUNGEON_COBBLE_ = registerBlock("mossy_dungeon_cobble",
-                new Block(AbstractBlock.Settings.create().requiresTool().strength(3.8F, 6.0F).sounds(BlockSoundGroup.LODESTONE).mapColor(MapColor.TERRACOTTA_BLACK)));
+                new Block(AbstractBlock.Settings.create().requiresTool().strength(2.8F, 4.0F).sounds(BlockSoundGroup.BASALT).mapColor(MapColor.TERRACOTTA_BLACK)));
 
 
 
