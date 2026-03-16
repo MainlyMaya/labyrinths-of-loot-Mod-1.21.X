@@ -1,5 +1,7 @@
 package net.colormaya.labyrinths_of_loot;
 
+import net.colormaya.labyrinths_of_loot.block.ModBlocks;
+import net.colormaya.labyrinths_of_loot.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +13,10 @@ public class LabyrinthsOfLoot implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
+
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 
 	}
 }
