@@ -26,7 +26,7 @@ import net.minecraft.util.Identifier;
                 new Block(AbstractBlock.Settings.create().requiresTool().strength(3.8F, 6.0F).sounds(BlockSoundGroup.LODESTONE).mapColor(MapColor.TERRACOTTA_BLACK)));
         public static final Block MOSSY_DUNGEON_STONE_BRICKS = registerBlock("mossy_dungeon_stone_bricks",
                 new Block(AbstractBlock.Settings.create().requiresTool().strength(3.8F, 6.0F).sounds(BlockSoundGroup.LODESTONE).mapColor(MapColor.TERRACOTTA_BLACK)));
-        public static final Block MOSSY_DUNGEON_COBBLE_ = registerBlock("mossy_dungeon_cobble",
+        public static final Block MOSSY_DUNGEON_COBBLE = registerBlock("mossy_dungeon_cobble",
                 new Block(AbstractBlock.Settings.create().requiresTool().strength(3.8F, 6.0F).sounds(BlockSoundGroup.LODESTONE).mapColor(MapColor.TERRACOTTA_BLACK)));
 
 
@@ -54,7 +54,7 @@ import net.minecraft.util.Identifier;
                 entries.add(DUNGEON_COBBLE_);
                 entries.add(DUNGEON_STONE_BRICKS);
                 entries.add(MOSSY_DUNGEON_STONE_BRICKS);
-                entries.add(MOSSY_DUNGEON_COBBLE_);
+                entries.add(MOSSY_DUNGEON_COBBLE);
             });
         }
     }
