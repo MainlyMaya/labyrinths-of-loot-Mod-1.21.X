@@ -1,12 +1,12 @@
 package net.colormaya.labyrinths_of_loot.block;
 
 import net.colormaya.labyrinths_of_loot.LabyrinthsOfLoot;
+import net.colormaya.labyrinths_of_loot.block.custom.PillarBaseBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.MapColor;
 import net.minecraft.block.PillarBlock;
-import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -39,9 +39,13 @@ import net.minecraft.util.Identifier;
         public static final Block MIRESTONE_BRICKS = registerBlock("mirestone_bricks",
                 new Block(AbstractBlock.Settings.create().requiresTool().strength(2.3F, 3.0F).sounds(BlockSoundGroup.BONE).mapColor(MapColor.PALE_GREEN)));
         public static final Block CORALSTONE = registerBlock("coralstone",
-                new Block(AbstractBlock.Settings.create().requiresTool().strength(2.0F, 6.0F).sounds(BlockSoundGroup.BONE).mapColor(MapColor.PALE_GREEN)));
+                new Block(AbstractBlock.Settings.create().requiresTool().strength(2.0F, 6.0F).sounds(BlockSoundGroup.BONE).mapColor(MapColor.CYAN)));
         public static final Block CORALSTONE_BRICKS = registerBlock("coralstone_bricks",
-                new Block(AbstractBlock.Settings.create().requiresTool().strength(2.0F, 6.0F).sounds(BlockSoundGroup.BONE).mapColor(MapColor.PALE_GREEN)));
+                new Block(AbstractBlock.Settings.create().requiresTool().strength(2.0F, 6.0F).sounds(BlockSoundGroup.BONE).mapColor(MapColor.CYAN)));
+        public static final Block CORALSTONE_PILLAR_BASE = registerBlock("coralstone_pillar_base",
+                new PillarBaseBlock(AbstractBlock.Settings.create().requiresTool().strength(2.0F, 6.0F).sounds(BlockSoundGroup.BONE).mapColor(MapColor.CYAN)));
+        public static final Block CORALSTONE_PILLAR = registerBlock("coralstone_pillar",
+                new PillarBlock(AbstractBlock.Settings.create().requiresTool().strength(2.0F, 6.0F).sounds(BlockSoundGroup.BONE).mapColor(MapColor.CYAN)));
 
 
 
@@ -73,6 +77,8 @@ import net.minecraft.util.Identifier;
                 entries.add(MIRESTONE_BRICKS);
                 entries.add(CORALSTONE);
                 entries.add(CORALSTONE_BRICKS);
+                entries.add(CORALSTONE_PILLAR);
+                entries.add(CORALSTONE_PILLAR_BASE);
             });
         }
     }

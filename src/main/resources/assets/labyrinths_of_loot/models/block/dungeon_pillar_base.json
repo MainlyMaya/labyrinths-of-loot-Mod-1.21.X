@@ -1,7 +1,6 @@
 {
-  "parent":"minecraft:block/cube_column",
+  "parent": "minecraft:block/cube_column",
   "textures": {
-    "particle": "labyrinths_of_loot:block/dungeon_pillar_base_side",
     "end": "labyrinths_of_loot:block/dungeon_pillar_base_bottom",
     "side": "labyrinths_of_loot:block/dungeon_pillar_base_side"
   }

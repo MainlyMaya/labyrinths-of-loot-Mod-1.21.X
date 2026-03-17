@@ -13,6 +13,8 @@ import net.minecraft.util.Identifier;
     public class ModItems {
         public static final Item LIMESTONE_CHUNK = registerItem("limestone_chunk", new Item(new Item.Settings()));
         public static final Item MIRE_BALL = registerItem("mire_ball", new Item(new Item.Settings()));
+        public static final Item MIRE_BRICK = registerItem("mire_brick", new Item(new Item.Settings()));
+        public static final Item CORAL_FRAGMENTS = registerItem("coral_fragments", new Item(new Item.Settings()));
 
         private static Item registerItem(String name, Item item) {
             return Registry.register(Registries.ITEM, Identifier.of(LabyrinthsOfLoot.MOD_ID, name), item);
@@ -24,6 +26,8 @@ import net.minecraft.util.Identifier;
             ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
                 entries.add(LIMESTONE_CHUNK);
                 entries.add(MIRE_BALL);
+                entries.add(MIRE_BRICK);
+                entries.add(CORAL_FRAGMENTS);
             });
 
         }

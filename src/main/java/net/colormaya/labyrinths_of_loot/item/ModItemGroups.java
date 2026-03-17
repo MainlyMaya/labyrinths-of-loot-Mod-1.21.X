@@ -12,23 +12,34 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
     public static final ItemGroup LABYRINTHS_OF_LOOT_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP ,
-            Identifier.of(LabyrinthsOfLoot.MOD_ID, "Labyrinths_of_loot_items"),
+            Identifier.of(LabyrinthsOfLoot.MOD_ID, "labyrinths_of_loot_items"),
             FabricItemGroup.builder().icon(()-> new ItemStack(ModBlocks.DUNGEON_STONE_BRICKS))
                     .displayName(Text.translatable("itemgroup.labyrinths_of_loot.items"))
                     .entries((displayContext, entries) -> {
-                        entries.add(ModItems.LIMESTONE_CHUNK);
-                        entries.add(ModItems.MIRE_BALL);
+
                         entries.add(ModBlocks.DUNGEON_STONE);
                         entries.add(ModBlocks.DUNGEON_PILLAR);
                         entries.add(ModBlocks.DUNGEON_PILLAR_BASE);
                         entries.add(ModBlocks.MOSSY_DUNGEON_STONE_BRICKS);
                         entries.add(ModBlocks.MOSSY_DUNGEON_COBBLE);
+
+                        entries.add(ModItems.MIRE_BALL);
+                        entries.add(ModItems.MIRE_BRICK);
+
                         entries.add(ModBlocks.MIRESTONE);
                         entries.add(ModBlocks.MIRESTONE_BRICKS);
+
+                        entries.add(ModItems.LIMESTONE_CHUNK);
+
                         entries.add(ModBlocks.LIMESTONE_BRICKS);
                         entries.add(ModBlocks.CHISELED_LIMESTONE_BRICKS);
+
+                        entries.add(ModItems.CORAL_FRAGMENTS);
+
                         entries.add(ModBlocks.CORALSTONE);
                         entries.add(ModBlocks.CORALSTONE_BRICKS);
+                        entries.add(ModBlocks.CORALSTONE_PILLAR);
+                        entries.add(ModBlocks.CORALSTONE_PILLAR_BASE);
 
                     })
 
