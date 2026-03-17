@@ -38,6 +38,10 @@ import net.minecraft.util.Identifier;
                 new Block(AbstractBlock.Settings.create().requiresTool().strength(1.3F, 2.0F).sounds(BlockSoundGroup.PACKED_MUD).mapColor(MapColor.PALE_GREEN)));
         public static final Block MIRESTONE_BRICKS = registerBlock("mirestone_bricks",
                 new Block(AbstractBlock.Settings.create().requiresTool().strength(2.3F, 3.0F).sounds(BlockSoundGroup.BONE).mapColor(MapColor.PALE_GREEN)));
+        public static final Block MIRESTONE_PILLAR_BASE = registerBlock("mirestone_pillar_base",
+                new PillarBaseBlock(AbstractBlock.Settings.create().requiresTool().strength(2.3F, 3.0F).sounds(BlockSoundGroup.BONE).mapColor(MapColor.PALE_GREEN)));
+        public static final Block MIRESTONE_PILLAR = registerBlock("mirestone_pillar",
+                new PillarBlock(AbstractBlock.Settings.create().requiresTool().strength(2.3F, 3.0F).sounds(BlockSoundGroup.BONE).mapColor(MapColor.PALE_GREEN)));
         public static final Block CORALSTONE = registerBlock("coralstone",
                 new Block(AbstractBlock.Settings.create().requiresTool().strength(2.0F, 6.0F).sounds(BlockSoundGroup.BONE).mapColor(MapColor.CYAN)));
         public static final Block CORALSTONE_BRICKS = registerBlock("coralstone_bricks",
@@ -75,6 +79,8 @@ import net.minecraft.util.Identifier;
                 entries.add(DUNGEON_PILLAR);
                 entries.add(MIRESTONE);
                 entries.add(MIRESTONE_BRICKS);
+                entries.add(MIRESTONE_PILLAR);
+                entries.add(MIRESTONE_PILLAR_BASE);
                 entries.add(CORALSTONE);
                 entries.add(CORALSTONE_BRICKS);
                 entries.add(CORALSTONE_PILLAR);

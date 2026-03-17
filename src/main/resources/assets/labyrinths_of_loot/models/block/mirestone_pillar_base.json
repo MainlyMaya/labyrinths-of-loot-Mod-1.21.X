@@ -2,10 +2,10 @@
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "labyrinths_of_loot:block/coralstone_pillar_base_end",
-		"1": "labyrinths_of_loot:block/coralstone_pillar_base_side",
-		"2": "labyrinths_of_loot:block/coralstone_pillar_end",
-		"particle": "labyrinths_of_loot:block/coralstone_pillar_base_side"
+		"0": "labyrinths_of_loot:block/mirestone_pillar_base_top",
+		"1": "labyrinths_of_loot:block/mirestone_pillar_base_side",
+		"2": "labyrinths_of_loot:block/mirestone_pillar_end",
+		"particle": "labyrinths_of_loot:block/mirestone_pillar_base_side"
 	},
 	"elements": [
 		{

@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "labyrinths_of_loot:block/mirestone_pillar_base",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "labyrinths_of_loot:block/mirestone_pillar_base",
+      "y": 90,
+      "x": 90
+    },
+    "facing=north": {
+      "model": "labyrinths_of_loot:block/mirestone_pillar_base",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "labyrinths_of_loot:block/mirestone_pillar_base",
+      "y": 180,
+      "x": 90
+    },
+    "facing=up": {
+      "model": "labyrinths_of_loot:block/mirestone_pillar_base"
+    },
+    "facing=west": {
+      "model": "labyrinths_of_loot:block/mirestone_pillar_base",
+      "y": 270,
+      "x": 90
+    }
+  }
+}
