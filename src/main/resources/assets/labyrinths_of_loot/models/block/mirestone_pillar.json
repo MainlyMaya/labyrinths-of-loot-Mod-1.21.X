@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:block/cube_column",
+	"textures": {
+		"end": "labyrinths_of_loot:block/mirestone_pillar_end",
+		"side": "labyrinths_of_loot:block/mirestone_pillar_side"
+	}
+}

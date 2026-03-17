@@ -28,6 +28,8 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.MIRESTONE);
                         entries.add(ModBlocks.MIRESTONE_BRICKS);
+                        entries.add(ModBlocks.MIRESTONE_PILLAR);
+                        entries.add(ModBlocks.MIRESTONE_PILLAR_BASE);
 
                         entries.add(ModItems.LIMESTONE_CHUNK);
 
