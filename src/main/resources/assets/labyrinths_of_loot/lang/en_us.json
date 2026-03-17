@@ -1,6 +1,8 @@
 {
   "item.labyrinths_of_loot.limestone_chunk": "Limestone Chunk",
   "item.labyrinths_of_loot.mire_ball": "Mire Ball",
+  "item.labyrinths_of_loot.mire_brick": "Mire Brick",
+  "item.labyrinths_of_loot.coral_fragments": "Coral Fragments",
 
 
   "block.labyrinths_of_loot.limestone_bricks": "Limestone Bricks",
@@ -15,6 +17,9 @@
   "block.labyrinths_of_loot.mirestone": "Mirestone",
   "block.labyrinths_of_loot.mirestone_bricks": "Mirestone Bricks",
   "block.labyrinths_of_loot.coralstone": "Coralstone",
-  "block.labyrinths_of_loot.coralstone_bricks": "Coralstone Bricks"
+  "block.labyrinths_of_loot.coralstone_bricks": "Coralstone Bricks",
+  "block.labyrinths_of_loot.coralstone_pillar_base": "Coralstone Pillar Base",
+  "block.labyrinths_of_loot.coralstone_pillar": "Coralstone Pillar",
 
+  "itemgroup.labyrinths_of_loot.items": "Labyrinths Of Loot"
 }
