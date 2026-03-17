@@ -5,6 +5,8 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.MapColor;
+import net.minecraft.block.PillarBlock;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -19,17 +21,23 @@ import net.minecraft.util.Identifier;
         public static final Block CHISELED_LIMESTONE_BRICKS = registerBlock("chiseled_limestone_bricks",
                 new Block(AbstractBlock.Settings.create().requiresTool().strength(1.5F, 2.0F).sounds(BlockSoundGroup.DRIPSTONE_BLOCK).mapColor(MapColor.TERRACOTTA_BROWN)));
         public static final Block DUNGEON_STONE = registerBlock("dungeon_stone",
-                new Block(AbstractBlock.Settings.create().requiresTool().strength(3.2F, 6.0F).sounds(BlockSoundGroup.LODESTONE).mapColor(MapColor.TERRACOTTA_BLACK)));
+                new Block(AbstractBlock.Settings.create().requiresTool().strength(3.2F, 6.0F).sounds(BlockSoundGroup.BASALT).mapColor(MapColor.GRAY)));
         public static final Block DUNGEON_STONE_BRICKS = registerBlock("dungeon_stone_bricks",
-                new Block(AbstractBlock.Settings.create().requiresTool().strength(3.8F, 6.0F).sounds(BlockSoundGroup.LODESTONE).mapColor(MapColor.TERRACOTTA_BLACK)));
+                new Block(AbstractBlock.Settings.create().requiresTool().strength(3.8F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS).mapColor(MapColor.GRAY)));
         public static final Block DUNGEON_COBBLE = registerBlock("dungeon_cobble",
-                new Block(AbstractBlock.Settings.create().requiresTool().strength(3.8F, 6.0F).sounds(BlockSoundGroup.LODESTONE).mapColor(MapColor.TERRACOTTA_BLACK)));
+                new Block(AbstractBlock.Settings.create().requiresTool().strength(3.8F, 6.0F).sounds(BlockSoundGroup.BASALT).mapColor(MapColor.GRAY)));
         public static final Block MOSSY_DUNGEON_STONE_BRICKS = registerBlock("mossy_dungeon_stone_bricks",
-                new Block(AbstractBlock.Settings.create().requiresTool().strength(3.8F, 6.0F).sounds(BlockSoundGroup.LODESTONE).mapColor(MapColor.TERRACOTTA_BLACK)));
+                new Block(AbstractBlock.Settings.create().requiresTool().strength(3.8F, 4.0F).sounds(BlockSoundGroup.NETHER_BRICKS).mapColor(MapColor.GRAY)));
         public static final Block MOSSY_DUNGEON_COBBLE = registerBlock("mossy_dungeon_cobble",
-                new Block(AbstractBlock.Settings.create().requiresTool().strength(3.8F, 6.0F).sounds(BlockSoundGroup.LODESTONE).mapColor(MapColor.TERRACOTTA_BLACK)));
-
-
+                new Block(AbstractBlock.Settings.create().requiresTool().strength(3.8F, 4.0F).sounds(BlockSoundGroup.BASALT).mapColor(MapColor.GRAY)));
+        public static final Block DUNGEON_PILLAR_BASE = registerBlock("dungeon_pillar_base",
+                new PillarBlock(AbstractBlock.Settings.create().requiresTool().strength(3.8F, 5.0F).sounds(BlockSoundGroup.NETHER_BRICKS).mapColor(MapColor.GRAY)));
+        public static final Block DUNGEON_PILLAR = registerBlock("dungeon_pillar",
+                new PillarBlock(AbstractBlock.Settings.create().requiresTool().strength(3.8F, 5.0F).sounds(BlockSoundGroup.NETHER_BRICKS).mapColor(MapColor.GRAY)));
+        public static final Block MIRESTONE = registerBlock("mirestone",
+                new Block(AbstractBlock.Settings.create().requiresTool().strength(1.3F, 2.0F).sounds(BlockSoundGroup.PACKED_MUD).mapColor(MapColor.PALE_GREEN)));
+        public static final Block MIRESTONE_BRICKS = registerBlock("mirestone_bricks",
+                new Block(AbstractBlock.Settings.create().requiresTool().strength(2.3F, 3.0F).sounds(BlockSoundGroup.DECORATED_POT).mapColor(MapColor.PALE_GREEN)));
 
 
 
@@ -55,6 +63,10 @@ import net.minecraft.util.Identifier;
                 entries.add(DUNGEON_STONE_BRICKS);
                 entries.add(MOSSY_DUNGEON_STONE_BRICKS);
                 entries.add(MOSSY_DUNGEON_COBBLE);
+                entries.add(DUNGEON_PILLAR_BASE);
+                entries.add(DUNGEON_PILLAR);
+                entries.add(MIRESTONE);
+                entries.add(MIRESTONE_BRICKS);
             });
         }
     }

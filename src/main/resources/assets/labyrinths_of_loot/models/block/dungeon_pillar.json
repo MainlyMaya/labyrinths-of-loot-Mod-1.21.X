@@ -1,0 +1,8 @@
+{
+  "parent":"minecraft:block/cube_column",
+  "textures": {
+    "particle": "labyrinths_of_loot:block/dungeon_pillar_side",
+    "end": "labyrinths_of_loot:block/dungeon_pillar_top",
+    "side": "labyrinths_of_loot:block/dungeon_pillar_side"
+  }
+}
