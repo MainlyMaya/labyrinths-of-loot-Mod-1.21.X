@@ -26,5 +26,12 @@
   "block.labyrinths_of_loot.coralstone_pillar_base": "Coralstone Pillar Base",
   "block.labyrinths_of_loot.coralstone_pillar": "Coralstone Pillar",
 
+  "block.labyrinths_of_loot.carapace_bricks": "Carapace Bricks",
+  "block.labyrinths_of_loot.layered_carapace_bricks": "Layered Carapace Bricks",
+  "block.labyrinths_of_loot.cracked_carapace_bricks": "Cracked Carapace Bricks",
+  "block.labyrinths_of_loot.cracked_layered_carapace_bricks": "Cracked Layered Carapace Bricks",
+  "block.labyrinths_of_loot.embedded_carapace_bricks": "Embedded Carapace Bricks",
+  "block.labyrinths_of_loot.layered_embedded_carapace_bricks": "Layered Embedded Carapace Bricks",
+
   "itemgroup.labyrinths_of_loot.items": "Labyrinths Of Loot"
 }

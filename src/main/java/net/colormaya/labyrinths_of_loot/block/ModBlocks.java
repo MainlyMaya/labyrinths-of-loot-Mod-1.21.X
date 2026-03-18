@@ -1,12 +1,10 @@
 package net.colormaya.labyrinths_of_loot.block;
 
 import net.colormaya.labyrinths_of_loot.LabyrinthsOfLoot;
+import net.colormaya.labyrinths_of_loot.block.custom.ReplacingBlock;
 import net.colormaya.labyrinths_of_loot.block.custom.PillarBaseBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.MapColor;
-import net.minecraft.block.PillarBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -51,6 +49,19 @@ import net.minecraft.util.Identifier;
         public static final Block CORALSTONE_PILLAR = registerBlock("coralstone_pillar",
                 new PillarBlock(AbstractBlock.Settings.create().requiresTool().strength(2.0F, 6.0F).sounds(BlockSoundGroup.BONE).mapColor(MapColor.CYAN)));
 
+        public static final Block CARAPACE_BRICKS = registerBlock("carapace_bricks",
+                new Block(AbstractBlock.Settings.create().strength(-1.0F, 3600000.0F).dropsNothing().allowsSpawning(Blocks::never).sounds(BlockSoundGroup.STONE).mapColor(MapColor.BLACK)));
+        public static final Block LAYERED_CARAPACE_BRICKS = registerBlock("layered_carapace_bricks",
+                new Block(AbstractBlock.Settings.create().strength(-1.0F, 3600000.0F).dropsNothing().allowsSpawning(Blocks::never).sounds(BlockSoundGroup.STONE).mapColor(MapColor.BLACK)));
+        public static final Block CRACKED_CARAPACE_BRICKS = registerBlock("cracked_carapace_bricks",
+                new Block(AbstractBlock.Settings.create().strength(-1.0F, 3600000.0F).dropsNothing().allowsSpawning(Blocks::never).sounds(BlockSoundGroup.STONE).mapColor(MapColor.BLACK)));
+        public static final Block CRACKED_LAYERED_CARAPACE_BRICKS = registerBlock("cracked_layered_carapace_bricks",
+                new Block(AbstractBlock.Settings.create().strength(-1.0F, 3600000.0F).dropsNothing().allowsSpawning(Blocks::never).sounds(BlockSoundGroup.STONE).mapColor(MapColor.BLACK)));
+
+        public static final Block EMBEDDED_CARAPACE_BRICKS = registerBlock("embedded_carapace_bricks",
+                new ReplacingBlock(AbstractBlock.Settings.create().strength(50.0F, 50.0F).requiresTool().allowsSpawning(Blocks::never).sounds(BlockSoundGroup.STONE).mapColor(MapColor.BLACK)));
+        public static final Block LAYERED_EMBEDDED_CARAPACE_BRICKS = registerBlock("layered_embedded_carapace_bricks",
+                new ReplacingBlock(AbstractBlock.Settings.create().strength(50.0F, 50.0F).requiresTool().allowsSpawning(Blocks::never).sounds(BlockSoundGroup.STONE).mapColor(MapColor.BLACK)));
 
 
 
@@ -85,6 +96,15 @@ import net.minecraft.util.Identifier;
                 entries.add(CORALSTONE_BRICKS);
                 entries.add(CORALSTONE_PILLAR);
                 entries.add(CORALSTONE_PILLAR_BASE);
+                entries.add(CARAPACE_BRICKS);
+                entries.add(LAYERED_CARAPACE_BRICKS);
+                entries.add(CRACKED_CARAPACE_BRICKS);
+                entries.add(CRACKED_LAYERED_CARAPACE_BRICKS);
+                entries.add(EMBEDDED_CARAPACE_BRICKS);
+                entries.add(LAYERED_EMBEDDED_CARAPACE_BRICKS);
             });
+
+            // Initialize the map after blocks are registered
+            ReplacingBlock.initializeReplaceBlockMap();
         }
     }
