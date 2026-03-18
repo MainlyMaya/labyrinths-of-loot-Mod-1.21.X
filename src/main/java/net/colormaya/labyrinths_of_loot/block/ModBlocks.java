@@ -67,6 +67,8 @@ import net.minecraft.util.Identifier;
 
         public static final Block DRAGON_BAMBOO = registerBlock("dragon_bamboo",
                 new DragonBambooBlock(AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).solid().ticksRandomly().strength(1.0F).sounds(BlockSoundGroup.BAMBOO).nonOpaque().dynamicBounds().offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY).solidBlock(Blocks::never)
+
+
                 )
         );
 
