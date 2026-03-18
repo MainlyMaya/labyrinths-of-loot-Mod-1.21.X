@@ -1,10 +1,12 @@
 package net.colormaya.labyrinths_of_loot.block;
 
 import net.colormaya.labyrinths_of_loot.LabyrinthsOfLoot;
-import net.colormaya.labyrinths_of_loot.block.custom.ReplacingBlock;
+import net.colormaya.labyrinths_of_loot.block.custom.DragonBambooBlock;
 import net.colormaya.labyrinths_of_loot.block.custom.PillarBaseBlock;
+import net.colormaya.labyrinths_of_loot.block.custom.ReplacingBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -63,7 +65,10 @@ import net.minecraft.util.Identifier;
         public static final Block LAYERED_EMBEDDED_CARAPACE_BRICKS = registerBlock("layered_embedded_carapace_bricks",
                 new ReplacingBlock(AbstractBlock.Settings.create().strength(50.0F, 50.0F).requiresTool().allowsSpawning(Blocks::never).sounds(BlockSoundGroup.STONE).mapColor(MapColor.BLACK)));
 
-
+        public static final Block DRAGON_BAMBOO = registerBlock("dragon_bamboo",
+                new DragonBambooBlock(AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).solid().ticksRandomly().strength(1.0F).sounds(BlockSoundGroup.BAMBOO).nonOpaque().dynamicBounds().offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY).solidBlock(Blocks::never)
+                )
+        );
 
         private static Block registerBlock(String name, Block block) {
             registerBlockItem(name, block);
@@ -102,6 +107,8 @@ import net.minecraft.util.Identifier;
                 entries.add(CRACKED_LAYERED_CARAPACE_BRICKS);
                 entries.add(EMBEDDED_CARAPACE_BRICKS);
                 entries.add(LAYERED_EMBEDDED_CARAPACE_BRICKS);
+
+                entries.add(DRAGON_BAMBOO);
             });
 
             // Initialize the map after blocks are registered
