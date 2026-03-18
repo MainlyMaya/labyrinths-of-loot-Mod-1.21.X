@@ -1,0 +1,36 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"1": "labyrinths_of_loot:block/dragon_bamboo_leaves_1"
+	},
+	"elements": [
+		{
+			"from": [8, 0, -5.5],
+			"to": [8, 16, 21.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6, 0, 0.5]},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 8], "texture": "#1"},
+				"east": {"uv": [0, 0, 13.5, 8], "texture": "#1"},
+				"south": {"uv": [0, 0, 0, 8], "texture": "#1"},
+				"west": {"uv": [13.5, 0, 0, 8], "texture": "#1"},
+				"up": {"uv": [0, 0, 0, 13.5], "texture": "#1"},
+				"down": {"uv": [0, 0, 0, 13.5], "texture": "#1"}
+			}
+		},
+		{
+			"from": [-5.5, 0, 8],
+			"to": [21.5, 16, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [15.5, 0, 6]},
+			"faces": {
+				"north": {"uv": [13.5, 0, 0, 8], "texture": "#1"},
+				"east": {"uv": [0, 0, 0, 8], "texture": "#1"},
+				"south": {"uv": [0, 0, 13.5, 8], "texture": "#1"},
+				"west": {"uv": [0, 0, 0, 8], "texture": "#1"},
+				"up": {"uv": [0, 0, 0, 13.5], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [0, 0, 0, 13.5], "rotation": 270, "texture": "#1"}
+			}
+		}
+	]
+}

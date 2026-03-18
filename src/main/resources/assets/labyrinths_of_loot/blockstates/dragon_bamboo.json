@@ -1,0 +1,27 @@
+{
+  "multipart": [
+    {
+      "apply": [
+        {
+          "model": "labyrinths_of_loot:block/dragon_bamboo"
+        }
+      ]
+    },
+    {
+      "apply": {
+        "model": "labyrinths_of_loot:block/dragon_bamboo_leaves_small"
+      },
+      "when": {
+        "leaves": "small"
+      }
+    },
+    {
+      "apply": {
+        "model": "labyrinths_of_loot:block/dragon_bamboo_leaves_large"
+      },
+      "when": {
+        "leaves": "large"
+      }
+    }
+  ]
+}
