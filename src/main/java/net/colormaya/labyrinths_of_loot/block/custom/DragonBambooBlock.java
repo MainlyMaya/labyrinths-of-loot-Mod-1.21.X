@@ -86,7 +86,14 @@ public class DragonBambooBlock extends Block implements Fertilizable {
         } else {
             BlockState blockState = ctx.getWorld().getBlockState(ctx.getBlockPos().down());
             if (blockState.isIn(ModTags.Blocks.DRAGON_BAMBOO_PLANTABLE_ON)) {
-                return this.getDefaultState();
+                if (blockState.isOf(ModBlocks.DRAGON_BAMBOO_SHOOT)) {
+                    return this.getDefaultState();
+                } else if (blockState.isOf(ModBlocks.DRAGON_BAMBOO)) {
+                    return this.getDefaultState();
+                } else {
+                    BlockState blockState2 = ctx.getWorld().getBlockState(ctx.getBlockPos().up());
+                    return blockState2.isOf(ModBlocks.DRAGON_BAMBOO) ? this.getDefaultState() : ModBlocks.DRAGON_BAMBOO_SHOOT.getDefaultState();
+                }
             } else {
                 return null;
             }
