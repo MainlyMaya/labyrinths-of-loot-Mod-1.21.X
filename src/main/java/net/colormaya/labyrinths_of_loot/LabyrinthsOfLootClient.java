@@ -10,5 +10,6 @@ public class LabyrinthsOfLootClient implements ClientModInitializer {
     public void onInitializeClient() {
         // Tell Minecraft that DRAGON_BAMBOO uses cutout (transparent) rendering
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DRAGON_BAMBOO, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DRAGON_BAMBOO_SHOOT, RenderLayer.getCutout());
     }
 }

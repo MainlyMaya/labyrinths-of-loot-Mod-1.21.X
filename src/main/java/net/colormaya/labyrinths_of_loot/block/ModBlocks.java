@@ -2,6 +2,7 @@ package net.colormaya.labyrinths_of_loot.block;
 
 import net.colormaya.labyrinths_of_loot.LabyrinthsOfLoot;
 import net.colormaya.labyrinths_of_loot.block.custom.DragonBambooBlock;
+import net.colormaya.labyrinths_of_loot.block.custom.DragonBambooShoot;
 import net.colormaya.labyrinths_of_loot.block.custom.PillarBaseBlock;
 import net.colormaya.labyrinths_of_loot.block.custom.ReplacingBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -66,11 +67,9 @@ import net.minecraft.util.Identifier;
                 new ReplacingBlock(AbstractBlock.Settings.create().strength(50.0F, 50.0F).requiresTool().allowsSpawning(Blocks::never).sounds(BlockSoundGroup.STONE).mapColor(MapColor.BLACK)));
 
         public static final Block DRAGON_BAMBOO = registerBlock("dragon_bamboo",
-                new DragonBambooBlock(AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).solid().ticksRandomly().strength(1.0F).sounds(BlockSoundGroup.BAMBOO).nonOpaque().dynamicBounds().offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY).solidBlock(Blocks::never)
-
-
-                )
-        );
+                new DragonBambooBlock(AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).solid().ticksRandomly().strength(1.0F).sounds(BlockSoundGroup.BAMBOO).nonOpaque().dynamicBounds().offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY).solidBlock(Blocks::never)));
+        public static final Block DRAGON_BAMBOO_SHOOT = registerBlock("dragon_bamboo_shoot",
+                new DragonBambooShoot(AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).solid().ticksRandomly().breakInstantly().strength(1.0F).sounds(BlockSoundGroup.BAMBOO_SAPLING).nonOpaque().dynamicBounds().offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY).solidBlock(Blocks::never)));
 
         private static Block registerBlock(String name, Block block) {
             registerBlockItem(name, block);
@@ -111,6 +110,7 @@ import net.minecraft.util.Identifier;
                 entries.add(LAYERED_EMBEDDED_CARAPACE_BRICKS);
 
                 entries.add(DRAGON_BAMBOO);
+                entries.add(DRAGON_BAMBOO_SHOOT);
             });
 
             // Initialize the map after blocks are registered
