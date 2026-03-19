@@ -7,6 +7,7 @@ import net.colormaya.labyrinths_of_loot.block.custom.PillarBaseBlock;
 import net.colormaya.labyrinths_of_loot.block.custom.ReplacingBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -15,8 +16,9 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.Direction;
 
-    public class ModBlocks {
+public class ModBlocks {
         public static final Block LIMESTONE_BRICKS = registerBlock("limestone_bricks",
                 new Block(AbstractBlock.Settings.create().requiresTool().strength(1.5F, 2.0F).sounds(BlockSoundGroup.DRIPSTONE_BLOCK).mapColor(MapColor.TERRACOTTA_BROWN)));
         public static final Block CHISELED_LIMESTONE_BRICKS = registerBlock("chiseled_limestone_bricks",
@@ -70,6 +72,8 @@ import net.minecraft.util.Identifier;
                 new DragonBambooBlock(AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).solid().ticksRandomly().strength(1.2F).sounds(BlockSoundGroup.BAMBOO).nonOpaque().dynamicBounds().offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY).solidBlock(Blocks::never)));
         public static final Block DRAGON_BAMBOO_SHOOT = registerBlock("dragon_bamboo_shoot",
                 new DragonBambooShoot(AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).solid().ticksRandomly().breakInstantly().noCollision().strength(0.1F).sounds(BlockSoundGroup.BAMBOO_SAPLING).nonOpaque().dynamicBounds().offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY).solidBlock(Blocks::never)));
+        public static final Block DRAGON_BAMBOO_BLOCK = registerBlock("dragon_bamboo_block",
+                new PillarBlock(AbstractBlock.Settings.copy(Blocks.BAMBOO_BLOCK)));
 
 
         private static Block registerBlock(String name, Block block) {
@@ -112,6 +116,7 @@ import net.minecraft.util.Identifier;
 
                 entries.add(DRAGON_BAMBOO);
                 entries.add(DRAGON_BAMBOO_SHOOT);
+                entries.add(DRAGON_BAMBOO_BLOCK);
             });
 
             // Initialize the map after blocks are registered
