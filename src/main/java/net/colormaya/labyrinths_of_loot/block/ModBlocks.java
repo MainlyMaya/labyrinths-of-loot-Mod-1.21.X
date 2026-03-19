@@ -22,29 +22,29 @@ import net.minecraft.util.Identifier;
         public static final Block CHISELED_LIMESTONE_BRICKS = registerBlock("chiseled_limestone_bricks",
                 new Block(AbstractBlock.Settings.create().requiresTool().strength(1.5F, 2.0F).sounds(BlockSoundGroup.DRIPSTONE_BLOCK).mapColor(MapColor.TERRACOTTA_BROWN)));
         public static final Block DUNGEON_STONE = registerBlock("dungeon_stone",
-                new Block(AbstractBlock.Settings.create().requiresTool().strength(3.2F, 6.0F).sounds(BlockSoundGroup.BASALT).mapColor(MapColor.GRAY)));
+                new Block(AbstractBlock.Settings.create().requiresTool().strength(2.5F, 5.0F).sounds(BlockSoundGroup.BASALT).mapColor(MapColor.GRAY)));
         public static final Block DUNGEON_STONE_BRICKS = registerBlock("dungeon_stone_bricks",
-                new Block(AbstractBlock.Settings.create().requiresTool().strength(3.8F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS).mapColor(MapColor.GRAY)));
+                new Block(AbstractBlock.Settings.create().requiresTool().strength(3F, 6.0F).sounds(BlockSoundGroup.NETHER_BRICKS).mapColor(MapColor.GRAY)));
         public static final Block DUNGEON_COBBLE = registerBlock("dungeon_cobble",
-                new Block(AbstractBlock.Settings.create().requiresTool().strength(3.8F, 6.0F).sounds(BlockSoundGroup.BASALT).mapColor(MapColor.GRAY)));
+                new Block(AbstractBlock.Settings.create().requiresTool().strength(2.5F, 6.0F).sounds(BlockSoundGroup.BASALT).mapColor(MapColor.GRAY)));
         public static final Block MOSSY_DUNGEON_STONE_BRICKS = registerBlock("mossy_dungeon_stone_bricks",
-                new Block(AbstractBlock.Settings.create().requiresTool().strength(3.8F, 4.0F).sounds(BlockSoundGroup.NETHER_BRICKS).mapColor(MapColor.GRAY)));
+                new Block(AbstractBlock.Settings.create().requiresTool().strength(3F, 4.0F).sounds(BlockSoundGroup.NETHER_BRICKS).mapColor(MapColor.GRAY)));
         public static final Block MOSSY_DUNGEON_COBBLE = registerBlock("mossy_dungeon_cobble",
-                new Block(AbstractBlock.Settings.create().requiresTool().strength(3.8F, 4.0F).sounds(BlockSoundGroup.BASALT).mapColor(MapColor.GRAY)));
+                new Block(AbstractBlock.Settings.create().requiresTool().strength(3F, 4.0F).sounds(BlockSoundGroup.BASALT).mapColor(MapColor.GRAY)));
         public static final Block DUNGEON_PILLAR_BASE = registerBlock("dungeon_pillar_base",
-                new PillarBlock(AbstractBlock.Settings.create().requiresTool().strength(3.8F, 5.0F).sounds(BlockSoundGroup.NETHER_BRICKS).mapColor(MapColor.GRAY)));
+                new PillarBlock(AbstractBlock.Settings.create().requiresTool().strength(3F, 5.0F).sounds(BlockSoundGroup.NETHER_BRICKS).mapColor(MapColor.GRAY)));
         public static final Block DUNGEON_PILLAR = registerBlock("dungeon_pillar",
-                new PillarBlock(AbstractBlock.Settings.create().requiresTool().strength(3.8F, 5.0F).sounds(BlockSoundGroup.NETHER_BRICKS).mapColor(MapColor.GRAY)));
+                new PillarBlock(AbstractBlock.Settings.create().requiresTool().strength(3F, 5.0F).sounds(BlockSoundGroup.NETHER_BRICKS).mapColor(MapColor.GRAY)));
         public static final Block MIRESTONE = registerBlock("mirestone",
-                new Block(AbstractBlock.Settings.create().requiresTool().strength(1.3F, 2.0F).sounds(BlockSoundGroup.PACKED_MUD).mapColor(MapColor.PALE_GREEN)));
+                new Block(AbstractBlock.Settings.create().requiresTool().strength(1.2F, 2.0F).sounds(BlockSoundGroup.PACKED_MUD).mapColor(MapColor.PALE_GREEN)));
         public static final Block MIRESTONE_BRICKS = registerBlock("mirestone_bricks",
-                new Block(AbstractBlock.Settings.create().requiresTool().strength(2.3F, 3.0F).sounds(BlockSoundGroup.BONE).mapColor(MapColor.PALE_GREEN)));
+                new Block(AbstractBlock.Settings.create().requiresTool().strength(1.8F, 3.0F).sounds(BlockSoundGroup.BONE).mapColor(MapColor.PALE_GREEN)));
         public static final Block MIRESTONE_PILLAR_BASE = registerBlock("mirestone_pillar_base",
-                new PillarBaseBlock(AbstractBlock.Settings.create().requiresTool().strength(2.3F, 3.0F).sounds(BlockSoundGroup.BONE).mapColor(MapColor.PALE_GREEN)));
+                new PillarBaseBlock(AbstractBlock.Settings.create().requiresTool().strength(1.8F, 3.0F).sounds(BlockSoundGroup.BONE).mapColor(MapColor.PALE_GREEN)));
         public static final Block MIRESTONE_PILLAR = registerBlock("mirestone_pillar",
-                new PillarBlock(AbstractBlock.Settings.create().requiresTool().strength(2.3F, 3.0F).sounds(BlockSoundGroup.BONE).mapColor(MapColor.PALE_GREEN)));
+                new PillarBlock(AbstractBlock.Settings.create().requiresTool().strength(1.8F, 3.0F).sounds(BlockSoundGroup.BONE).mapColor(MapColor.PALE_GREEN)));
         public static final Block CORALSTONE = registerBlock("coralstone",
-                new Block(AbstractBlock.Settings.create().requiresTool().strength(2.0F, 6.0F).sounds(BlockSoundGroup.BONE).mapColor(MapColor.CYAN)));
+                new Block(AbstractBlock.Settings.create().requiresTool().strength(1.5F, 6.0F).sounds(BlockSoundGroup.BONE).mapColor(MapColor.CYAN)));
         public static final Block CORALSTONE_BRICKS = registerBlock("coralstone_bricks",
                 new Block(AbstractBlock.Settings.create().requiresTool().strength(2.0F, 6.0F).sounds(BlockSoundGroup.BONE).mapColor(MapColor.CYAN)));
         public static final Block CORALSTONE_PILLAR_BASE = registerBlock("coralstone_pillar_base",
@@ -62,14 +62,15 @@ import net.minecraft.util.Identifier;
                 new Block(AbstractBlock.Settings.create().strength(-1.0F, 3600000.0F).dropsNothing().allowsSpawning(Blocks::never).sounds(BlockSoundGroup.STONE).mapColor(MapColor.BLACK)));
 
         public static final Block EMBEDDED_CARAPACE_BRICKS = registerBlock("embedded_carapace_bricks",
-                new ReplacingBlock(AbstractBlock.Settings.create().strength(50.0F, 50.0F).requiresTool().allowsSpawning(Blocks::never).sounds(BlockSoundGroup.STONE).mapColor(MapColor.BLACK)));
+                new ReplacingBlock(AbstractBlock.Settings.create().strength(10.0F, 3600000.0F).requiresTool().allowsSpawning(Blocks::never).sounds(BlockSoundGroup.STONE).mapColor(MapColor.BLACK)));
         public static final Block LAYERED_EMBEDDED_CARAPACE_BRICKS = registerBlock("layered_embedded_carapace_bricks",
-                new ReplacingBlock(AbstractBlock.Settings.create().strength(50.0F, 50.0F).requiresTool().allowsSpawning(Blocks::never).sounds(BlockSoundGroup.STONE).mapColor(MapColor.BLACK)));
+                new ReplacingBlock(AbstractBlock.Settings.create().strength(10.0F, 3600000.0F).requiresTool().allowsSpawning(Blocks::never).sounds(BlockSoundGroup.STONE).mapColor(MapColor.BLACK)));
 
         public static final Block DRAGON_BAMBOO = registerBlock("dragon_bamboo",
-                new DragonBambooBlock(AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).solid().ticksRandomly().strength(1.0F).sounds(BlockSoundGroup.BAMBOO).nonOpaque().dynamicBounds().offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY).solidBlock(Blocks::never)));
+                new DragonBambooBlock(AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).solid().ticksRandomly().strength(1.2F).sounds(BlockSoundGroup.BAMBOO).nonOpaque().dynamicBounds().offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY).solidBlock(Blocks::never)));
         public static final Block DRAGON_BAMBOO_SHOOT = registerBlock("dragon_bamboo_shoot",
-                new DragonBambooShoot(AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).solid().ticksRandomly().breakInstantly().strength(1.0F).sounds(BlockSoundGroup.BAMBOO_SAPLING).nonOpaque().dynamicBounds().offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY).solidBlock(Blocks::never)));
+                new DragonBambooShoot(AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).solid().ticksRandomly().breakInstantly().noCollision().strength(0.1F).sounds(BlockSoundGroup.BAMBOO_SAPLING).nonOpaque().dynamicBounds().offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY).solidBlock(Blocks::never)));
+
 
         private static Block registerBlock(String name, Block block) {
             registerBlockItem(name, block);

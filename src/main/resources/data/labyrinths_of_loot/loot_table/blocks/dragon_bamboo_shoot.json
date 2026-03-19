@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "labyrinths_of_loot:dungeon_stone_pillar"
+          "name": "labyrinths_of_loot:dragon_bamboo"
         }
       ],
       "rolls": 1
     }
   ],
-  "random_sequence": "labyrinths_of_loot:blocks/dungeon_stone_pillar"
+  "random_sequence": "labyrinths_of_loot:blocks/dragon_bamboo_shoot"
 }

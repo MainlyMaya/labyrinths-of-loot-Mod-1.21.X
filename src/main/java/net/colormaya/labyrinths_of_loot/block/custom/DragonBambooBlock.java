@@ -172,7 +172,7 @@ public class DragonBambooBlock extends Block implements Fertilizable {
 
     @Override
     protected float calcBlockBreakingDelta(BlockState state, PlayerEntity player, BlockView world, BlockPos pos) {
-        return player.getMainHandStack().getItem() instanceof SwordItem ? 1.0F : super.calcBlockBreakingDelta(state, player, world, pos);
+        return player.getMainHandStack().getItem() instanceof SwordItem ? 0.3F : super.calcBlockBreakingDelta(state, player, world, pos);
     }
 
     protected void updateLeaves(BlockState state, World world, BlockPos pos, Random random, int height) {
