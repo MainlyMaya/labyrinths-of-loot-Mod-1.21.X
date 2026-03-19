@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "labyrinths_of_loot:dungeon_cobble"
+          "name": "labyrinths_of_loot:dungeon_stone_pillar_base"
         }
       ],
       "rolls": 1
     }
   ],
-  "random_sequence": "labyrinths_of_loot:blocks/dungeon_cobble"
+  "random_sequence": "labyrinths_of_loot:blocks/dungeon_stone_pillar_base"
 }

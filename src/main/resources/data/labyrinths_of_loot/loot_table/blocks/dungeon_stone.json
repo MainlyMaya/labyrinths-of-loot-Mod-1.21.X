@@ -2,7 +2,7 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "bonus_rolls": 0.0,
+      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:alternatives",
@@ -26,26 +26,22 @@
                   }
                 }
               ],
-              "name": "labyrinths_of_loot:coralstone"
+              "name": "labyrinths_of_loot:dungeon_stone"
             },
             {
               "type": "minecraft:item",
-              "functions": [
+              "conditions": [
                 {
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops",
-                  "function": "minecraft:apply_bonus"
-                },
-                {
-                  "function": "minecraft:explosion_decay"
+                  "condition": "minecraft:survives_explosion"
                 }
               ],
-              "name": "labyrinths_of_loot:coral_fragments"
+              "name": "labyrinths_of_loot:dungeon_cobble"
             }
           ]
         }
       ],
-      "rolls": 1.0
+      "rolls": 1
     }
-  ]
+  ],
+  "random_sequence": "labyrinths_of_loot:blocks/dungeon_stone"
 }
