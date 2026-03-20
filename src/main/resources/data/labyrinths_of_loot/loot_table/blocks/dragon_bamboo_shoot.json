@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "labyrinths_of_loot:dragon_bamboo"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "labyrinths_of_loot:blocks/dragon_bamboo_shoot"
+}
