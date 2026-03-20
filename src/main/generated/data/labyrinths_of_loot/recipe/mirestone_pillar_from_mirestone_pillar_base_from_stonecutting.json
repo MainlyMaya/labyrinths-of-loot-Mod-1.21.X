@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "labyrinths_of_loot:mirestone_pillar_base"
+  },
+  "result": {
+    "count": 1,
+    "id": "labyrinths_of_loot:mirestone_pillar"
+  }
+}

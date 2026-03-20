@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dungeon_stone_bricks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "labyrinths_of_loot:dungeon_stone_bricks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "labyrinths_of_loot:dungeon_pillar_from_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_dungeon_stone_bricks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "labyrinths_of_loot:dungeon_pillar_from_stonecutting"
+    ]
+  }
+}

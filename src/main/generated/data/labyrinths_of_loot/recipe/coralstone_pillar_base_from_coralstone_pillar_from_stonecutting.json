@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "labyrinths_of_loot:coralstone_pillar"
+  },
+  "result": {
+    "count": 1,
+    "id": "labyrinths_of_loot:coralstone_pillar_base"
+  }
+}

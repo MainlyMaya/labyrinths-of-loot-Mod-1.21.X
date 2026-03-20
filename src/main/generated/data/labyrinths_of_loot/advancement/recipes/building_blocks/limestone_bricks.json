@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_limestone_chunk": {
+      "conditions": {
+        "items": [
+          {
+            "items": "labyrinths_of_loot:limestone_chunk"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "labyrinths_of_loot:limestone_bricks"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_limestone_chunk"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "labyrinths_of_loot:limestone_bricks"
+    ]
+  }
+}

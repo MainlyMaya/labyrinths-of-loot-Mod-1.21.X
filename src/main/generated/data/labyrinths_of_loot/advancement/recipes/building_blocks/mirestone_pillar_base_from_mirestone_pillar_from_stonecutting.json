@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mirestone_pillar": {
+      "conditions": {
+        "items": [
+          {
+            "items": "labyrinths_of_loot:mirestone_pillar"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "labyrinths_of_loot:mirestone_pillar_base_from_mirestone_pillar_from_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_mirestone_pillar"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "labyrinths_of_loot:mirestone_pillar_base_from_mirestone_pillar_from_stonecutting"
+    ]
+  }
+}

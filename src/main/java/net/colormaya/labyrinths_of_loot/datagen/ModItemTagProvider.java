@@ -1,6 +1,7 @@
 package net.colormaya.labyrinths_of_loot.datagen;
 
 import net.colormaya.labyrinths_of_loot.block.ModBlocks;
+import net.colormaya.labyrinths_of_loot.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryKey;
@@ -23,6 +24,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.PLANKS)
                 .add(ModBlocks.DRAGON_BAMBOO_PLANKS.asItem())
-                ;
+        ;
+
     }
 }
