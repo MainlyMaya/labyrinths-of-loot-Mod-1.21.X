@@ -1,0 +1,23 @@
+{
+  "values": [
+    "labyrinths_of_loot:limestone_bricks",
+    "labyrinths_of_loot:chiseled_limestone_bricks",
+    "labyrinths_of_loot:coralstone",
+    "labyrinths_of_loot:coralstone_bricks",
+    "labyrinths_of_loot:coralstone_pillar",
+    "labyrinths_of_loot:coralstone_pillar_base",
+    "labyrinths_of_loot:mirestone",
+    "labyrinths_of_loot:mirestone_bricks",
+    "labyrinths_of_loot:mirestone_pillar",
+    "labyrinths_of_loot:mirestone_pillar_base",
+    "labyrinths_of_loot:dungeon_cobble",
+    "labyrinths_of_loot:dungeon_pillar",
+    "labyrinths_of_loot:dungeon_pillar_base",
+    "labyrinths_of_loot:dungeon_stone",
+    "labyrinths_of_loot:dungeon_stone_bricks",
+    "labyrinths_of_loot:mossy_dungeon_stone_bricks",
+    "labyrinths_of_loot:mossy_dungeon_cobble",
+    "labyrinths_of_loot:embedded_carapace_bricks",
+    "labyrinths_of_loot:layered_embedded_carapace_bricks"
+  ]
+}

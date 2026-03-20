@@ -1,6 +1,0 @@
-{
-  "parent":"minecraft:block/cube_all",
-  "textures": {
-    "all": "labyrinths_of_loot:block/mirestone_bricks"
-  }
-}

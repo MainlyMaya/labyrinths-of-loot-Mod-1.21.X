@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mire_ball": {
+      "conditions": {
+        "items": [
+          {
+            "items": "labyrinths_of_loot:mire_ball"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "labyrinths_of_loot:mirestone"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_mire_ball"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "labyrinths_of_loot:mirestone"
+    ]
+  }
+}

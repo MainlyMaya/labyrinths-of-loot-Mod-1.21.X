@@ -72,8 +72,12 @@ public class ModBlocks {
                 new DragonBambooBlock(AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).solid().ticksRandomly().strength(1.2F).sounds(BlockSoundGroup.BAMBOO).nonOpaque().dynamicBounds().offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY).solidBlock(Blocks::never)));
         public static final Block DRAGON_BAMBOO_SHOOT = registerBlock("dragon_bamboo_shoot",
                 new DragonBambooShoot(AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).solid().ticksRandomly().breakInstantly().noCollision().strength(0.1F).sounds(BlockSoundGroup.BAMBOO_SAPLING).nonOpaque().dynamicBounds().offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY).solidBlock(Blocks::never)));
-        public static final Block DRAGON_BAMBOO_BLOCK = registerBlock("dragon_bamboo_block",
-                new PillarBlock(AbstractBlock.Settings.copy(Blocks.BAMBOO_BLOCK)));
+    public static final Block DRAGON_BAMBOO_BLOCK = registerBlock("dragon_bamboo_block",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.BAMBOO_BLOCK)));
+    public static final Block STRIPPED_DRAGON_BAMBOO_BLOCK = registerBlock("stripped_dragon_bamboo_block",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_BAMBOO_BLOCK)));
+    public static final Block DRAGON_BAMBOO_PLANKS = registerBlock("dragon_bamboo_planks",
+            new Block(AbstractBlock.Settings.copy(Blocks.BAMBOO_PLANKS)));
 
 
         private static Block registerBlock(String name, Block block) {
@@ -117,6 +121,8 @@ public class ModBlocks {
                 entries.add(DRAGON_BAMBOO);
                 entries.add(DRAGON_BAMBOO_SHOOT);
                 entries.add(DRAGON_BAMBOO_BLOCK);
+                entries.add(STRIPPED_DRAGON_BAMBOO_BLOCK);
+                entries.add(DRAGON_BAMBOO_PLANKS);
             });
 
             // Initialize the map after blocks are registered

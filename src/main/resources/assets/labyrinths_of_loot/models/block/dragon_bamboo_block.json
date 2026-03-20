@@ -1,7 +1,7 @@
 {
-	"parent": "minecraft:block/cube_column",
-	"textures": {
-		"end": "labyrinths_of_loot:block/dragon_bamboo_block_top",
-		"side": "labyrinths_of_loot:block/dragon_bamboo_block"
-	}
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "labyrinths_of_loot:block/dragon_bamboo_block_top",
+    "side": "labyrinths_of_loot:block/dragon_bamboo_block_side"
+  }
 }

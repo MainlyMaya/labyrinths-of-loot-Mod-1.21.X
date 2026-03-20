@@ -1,6 +1,6 @@
 {
-	"parent": "minecraft:block/tinted_cross",
-	"textures": {
-		"cross": "labyrinths_of_loot:block/dragon_bamboo_shoot"
-	}
+  "parent": "minecraft:block/tinted_cross",
+  "textures": {
+    "cross": "labyrinths_of_loot:block/dragon_bamboo_shoot"
+  }
 }

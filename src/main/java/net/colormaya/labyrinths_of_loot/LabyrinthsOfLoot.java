@@ -5,6 +5,9 @@ import net.colormaya.labyrinths_of_loot.item.ModItemGroups;
 import net.colormaya.labyrinths_of_loot.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
+import net.minecraft.block.FireBlock;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,5 +22,11 @@ public class LabyrinthsOfLoot implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 
+		StrippableBlockRegistry.register(ModBlocks.DRAGON_BAMBOO_BLOCK, ModBlocks.STRIPPED_DRAGON_BAMBOO_BLOCK);
+
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRAGON_BAMBOO_BLOCK,5,5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRAGON_BAMBOO,5,5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_DRAGON_BAMBOO_BLOCK,5,5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRAGON_BAMBOO_SHOOT,5,5);
 	}
 }

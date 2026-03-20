@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "labyrinths_of_loot:block/stripped_dragon_bamboo_block_top",
+    "side": "labyrinths_of_loot:block/stripped_dragon_bamboo_block_side"
+  }
+}

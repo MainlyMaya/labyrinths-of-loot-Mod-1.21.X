@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "mirestone_bricks",
+  "ingredient": {
+    "item": "labyrinths_of_loot:mire_ball"
+  },
+  "result": {
+    "id": "labyrinths_of_loot:mirestone_bricks"
+  }
+}

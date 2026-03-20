@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "mirestone_bricks",
+  "ingredient": {
+    "item": "labyrinths_of_loot:mirestone"
+  },
+  "result": {
+    "id": "labyrinths_of_loot:mirestone_bricks"
+  }
+}

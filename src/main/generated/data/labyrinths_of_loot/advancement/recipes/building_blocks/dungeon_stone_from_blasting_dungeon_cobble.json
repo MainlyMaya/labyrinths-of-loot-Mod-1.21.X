@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dungeon_cobble": {
+      "conditions": {
+        "items": [
+          {
+            "items": "labyrinths_of_loot:dungeon_cobble"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:dungeon_stone_from_blasting_dungeon_cobble"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_dungeon_cobble"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:dungeon_stone_from_blasting_dungeon_cobble"
+    ]
+  }
+}
