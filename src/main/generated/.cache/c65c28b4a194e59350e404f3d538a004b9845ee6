@@ -1,6 +1,9 @@
-// 1.21	2026-03-20T14:26:31.5126395	Labyrinths Of Loot/Tags for minecraft:block
-a901a3766c0af25762f280b375e4b5d9e1b1338e data\minecraft\tags\block\mineable\axe.json
-0b810b3a04a3f80308be89881f13145d341ad484 data\minecraft\tags\block\mineable\shovel.json
+// 1.21	2026-03-21T01:15:26.6038499	Labyrinths Of Loot/Tags for minecraft:block
+83724b308947a34538180fa45c1af49ebb9e1416 data\minecraft\tags\block\mineable\axe.json
+609a0e848ccc68b6d59f3354ececa5bf318a2291 data\minecraft\tags\block\fence_gates.json
+c63d1647e3186ee0511971c57c937ef1568bbdd3 data\minecraft\tags\block\mineable\shovel.json
 f823681d2577e81533d6fe059d7658b81e742184 data\minecraft\tags\block\logs_that_burn.json
-e0916cbdd1da339136aff869e21752b846d014f1 data\minecraft\tags\block\mineable\pickaxe.json
+5b5a6f65301edf31687b149ce9b27b1d308e3caf data\minecraft\tags\block\walls.json
+15f2b81feeb15467f3db39547c49e8ed66bebf05 data\minecraft\tags\block\wooden_fences.json
+788a0308152a22b36268981d7e3aa777ae26f332 data\minecraft\tags\block\mineable\pickaxe.json
 4ae808bfb1c896d55254104153b7de15e62408ef data\minecraft\tags\block\base_stone_overworld.json

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "textures": {
+    "bottom": "labyrinths_of_loot:block/dragon_bamboo_door_bottom",
+    "top": "labyrinths_of_loot:block/dragon_bamboo_door_top"
+  }
+}

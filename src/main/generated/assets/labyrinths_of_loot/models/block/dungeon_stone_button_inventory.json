@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "labyrinths_of_loot:block/dungeon_stone"
+  }
+}

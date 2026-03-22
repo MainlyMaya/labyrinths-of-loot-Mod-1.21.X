@@ -1,5 +1,7 @@
 {
   "values": [
-    "labyrinths_of_loot:mirestone"
+    "labyrinths_of_loot:mirestone",
+    "labyrinths_of_loot:mirestone_slab",
+    "labyrinths_of_loot:mirestone_stairs"
   ]
 }

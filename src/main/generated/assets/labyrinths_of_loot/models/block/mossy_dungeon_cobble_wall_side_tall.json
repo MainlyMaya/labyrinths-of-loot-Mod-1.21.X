@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side_tall",
+  "textures": {
+    "wall": "labyrinths_of_loot:block/mossy_dungeon_cobble"
+  }
+}

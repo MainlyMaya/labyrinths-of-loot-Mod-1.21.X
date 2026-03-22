@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "labyrinths_of_loot:block/dungeon_stone",
+    "side": "labyrinths_of_loot:block/dungeon_stone",
+    "top": "labyrinths_of_loot:block/dungeon_stone"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "labyrinths_of_loot:block/coralstone_slab"
+    },
+    "type=double": {
+      "model": "labyrinths_of_loot:block/coralstone"
+    },
+    "type=top": {
+      "model": "labyrinths_of_loot:block/coralstone_slab_top"
+    }
+  }
+}

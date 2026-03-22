@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "labyrinths_of_loot:block/dungeon_cobble",
+    "side": "labyrinths_of_loot:block/dungeon_cobble",
+    "top": "labyrinths_of_loot:block/dungeon_cobble"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "labyrinths_of_loot:block/coralstone",
+    "side": "labyrinths_of_loot:block/coralstone",
+    "top": "labyrinths_of_loot:block/coralstone"
+  }
+}

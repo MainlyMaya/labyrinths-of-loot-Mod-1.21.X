@@ -6,6 +6,7 @@ import net.colormaya.labyrinths_of_loot.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
+import net.minecraft.block.SlabBlock;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
@@ -31,6 +32,15 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DRAGON_BAMBOO_PLANKS);
         addDrop(ModBlocks.DRAGON_BAMBOO_BLOCK);
         addDrop(ModBlocks.STRIPPED_DRAGON_BAMBOO_BLOCK);
+        addDrop(ModBlocks.DRAGON_BAMBOO_FENCE_GATE);
+        addDrop(ModBlocks.DRAGON_BAMBOO_FENCE);
+        addDrop(ModBlocks.DRAGON_BAMBOO_TRAPDOOR);
+        addDrop(ModBlocks.DRAGON_BAMBOO_STAIRS);
+        addDrop(ModBlocks.DRAGON_BAMBOO_BUTTON);
+        addDrop(ModBlocks.DRAGON_BAMBOO_PRESSURE_PLATE);
+
+        addDrop(ModBlocks.DRAGON_BAMBOO_SLAB, slabDrops(ModBlocks.DRAGON_BAMBOO_SLAB));
+        addDrop(ModBlocks.DRAGON_BAMBOO_DOOR, doorDrops(ModBlocks.DRAGON_BAMBOO_DOOR));
 
         addDrop(ModBlocks.DUNGEON_COBBLE);
         addDrop(ModBlocks.DUNGEON_PILLAR);
@@ -38,6 +48,20 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DUNGEON_STONE_BRICKS);
         addDrop(ModBlocks.MOSSY_DUNGEON_COBBLE);
         addDrop(ModBlocks.MOSSY_DUNGEON_STONE_BRICKS);
+        addDrop(ModBlocks.MOSSY_DUNGEON_COBBLE_WALL);
+        addDrop(ModBlocks.MOSSY_DUNGEON_STONE_BRICKS_WALL);
+        addDrop(ModBlocks.MOSSY_DUNGEON_COBBLE_STAIRS);
+        addDrop(ModBlocks.MOSSY_DUNGEON_STONE_BRICKS_STAIRS);
+        addDrop(ModBlocks.DUNGEON_STONE_BRICKS_STAIRS);
+        addDrop(ModBlocks.DUNGEON_STONE_STAIRS);
+        addDrop(ModBlocks.DUNGEON_COBBLE_STAIRS);
+        addDrop(ModBlocks.DUNGEON_COBBLE_WALL);
+        addDrop(ModBlocks.DUNGEON_STONE_BRICKS_WALL);
+        addDrop(ModBlocks.MOSSY_DUNGEON_COBBLE_SLAB, slabDrops(ModBlocks.MOSSY_DUNGEON_COBBLE_SLAB));
+        addDrop(ModBlocks.MOSSY_DUNGEON_STONE_BRICKS_SLAB, slabDrops(ModBlocks.MOSSY_DUNGEON_STONE_BRICKS_SLAB));
+        addDrop(ModBlocks.DUNGEON_STONE_SLAB, slabDrops(ModBlocks.DUNGEON_STONE_SLAB));
+        addDrop(ModBlocks.DUNGEON_COBBLE_SLAB, slabDrops(ModBlocks.DUNGEON_COBBLE_SLAB));
+        addDrop(ModBlocks.DUNGEON_STONE_BRICKS_SLAB, slabDrops(ModBlocks.DUNGEON_STONE_BRICKS_SLAB));
 
         addDrop(ModBlocks.CORALSTONE_BRICKS);
         addDrop(ModBlocks.CORALSTONE_PILLAR);

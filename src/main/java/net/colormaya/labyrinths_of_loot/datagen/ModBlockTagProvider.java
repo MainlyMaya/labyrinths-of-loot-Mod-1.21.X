@@ -38,10 +38,38 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MOSSY_DUNGEON_COBBLE)
                 .add(ModBlocks.EMBEDDED_CARAPACE_BRICKS)
                 .add(ModBlocks.LAYERED_EMBEDDED_CARAPACE_BRICKS)
+                .add(ModBlocks.MIRESTONE_SLAB)
+                .add(ModBlocks.MIRESTONE_STAIRS)
+                .add(ModBlocks.MIRESTONE_BRICKS_WALL)
+                .add(ModBlocks.MIRESTONE_BRICKS_SLAB)
+                .add(ModBlocks.MIRESTONE_BRICKS_STAIRS)
+                .add(ModBlocks.CORALSTONE_WALL)
+                .add(ModBlocks.CORALSTONE_SLAB)
+                .add(ModBlocks.CORALSTONE_STAIRS)
+                .add(ModBlocks.CORALSTONE_BRICKS)
+                .add(ModBlocks.CORALSTONE_BRICKS_WALL)
+                .add(ModBlocks.CORALSTONE_BRICKS_SLAB)
+                .add(ModBlocks.CORALSTONE_BRICKS_STAIRS)
+                .add(ModBlocks.DUNGEON_COBBLE_WALL)
+                .add(ModBlocks.DUNGEON_COBBLE_SLAB)
+                .add(ModBlocks.DUNGEON_COBBLE_STAIRS)
+                .add(ModBlocks.MOSSY_DUNGEON_COBBLE_WALL)
+                .add(ModBlocks.MOSSY_DUNGEON_COBBLE_SLAB)
+                .add(ModBlocks.MOSSY_DUNGEON_COBBLE_STAIRS)
+                .add(ModBlocks.MOSSY_DUNGEON_STONE_BRICKS_WALL)
+                .add(ModBlocks.MOSSY_DUNGEON_STONE_BRICKS_SLAB)
+                .add(ModBlocks.MOSSY_DUNGEON_STONE_BRICKS_STAIRS)
+                .add(ModBlocks.DUNGEON_STONE_SLAB)
+                .add(ModBlocks.DUNGEON_STONE_STAIRS)
+                .add(ModBlocks.DUNGEON_STONE_BRICKS_WALL)
+                .add(ModBlocks.DUNGEON_STONE_BRICKS_SLAB)
+                .add(ModBlocks.DUNGEON_STONE_BRICKS_STAIRS)
                 ;
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
                 .add(ModBlocks.MIRESTONE)
+                .add(ModBlocks.MIRESTONE_SLAB)
+                .add(ModBlocks.MIRESTONE_STAIRS)
                 ;
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
@@ -50,6 +78,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DRAGON_BAMBOO_BLOCK)
                 .add(ModBlocks.STRIPPED_DRAGON_BAMBOO_BLOCK)
                 .add(ModBlocks.DRAGON_BAMBOO_PLANKS)
+                .add(ModBlocks.DRAGON_BAMBOO_BUTTON)
+                .add(ModBlocks.DRAGON_BAMBOO_FENCE)
+                .add(ModBlocks.DRAGON_BAMBOO_DOOR)
+                .add(ModBlocks.DRAGON_BAMBOO_SLAB)
+                .add(ModBlocks.DRAGON_BAMBOO_TRAPDOOR)
+                .add(ModBlocks.DRAGON_BAMBOO_FENCE_GATE)
+                .add(ModBlocks.DRAGON_BAMBOO_PRESSURE_PLATE)
+                .add(ModBlocks.DRAGON_BAMBOO_STAIRS)
                 ;
 
         getOrCreateTagBuilder(BlockTags.BASE_STONE_OVERWORLD)
@@ -61,6 +97,20 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.DRAGON_BAMBOO_BLOCK)
                 .add(ModBlocks.STRIPPED_DRAGON_BAMBOO_BLOCK)
-                ;
+        ;
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
+                .add(ModBlocks.DRAGON_BAMBOO_FENCE)
+        ;
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.DRAGON_BAMBOO_FENCE_GATE)
+        ;
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.DUNGEON_STONE_BRICKS_WALL)
+                .add(ModBlocks.CORALSTONE_BRICKS_WALL)
+                .add(ModBlocks.DUNGEON_COBBLE_WALL)
+                .add(ModBlocks.MIRESTONE_BRICKS_WALL)
+                .add(ModBlocks.CORALSTONE_WALL)
+        ;
     }
 }

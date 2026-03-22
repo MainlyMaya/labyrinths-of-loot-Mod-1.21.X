@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "labyrinths_of_loot:item/dragon_bamboo_door"
+  }
+}

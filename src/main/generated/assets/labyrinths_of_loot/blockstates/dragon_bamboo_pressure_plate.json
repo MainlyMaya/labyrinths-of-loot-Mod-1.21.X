@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "labyrinths_of_loot:block/dragon_bamboo_pressure_plate"
+    },
+    "powered=true": {
+      "model": "labyrinths_of_loot:block/dragon_bamboo_pressure_plate_down"
+    }
+  }
+}

@@ -4,6 +4,14 @@
     "labyrinths_of_loot:dragon_bamboo_shoot",
     "labyrinths_of_loot:dragon_bamboo_block",
     "labyrinths_of_loot:stripped_dragon_bamboo_block",
-    "labyrinths_of_loot:dragon_bamboo_planks"
+    "labyrinths_of_loot:dragon_bamboo_planks",
+    "labyrinths_of_loot:dragon_bamboo_button",
+    "labyrinths_of_loot:dragon_bamboo_fence",
+    "labyrinths_of_loot:dragon_bamboo_door",
+    "labyrinths_of_loot:dragon_bamboo_slab",
+    "labyrinths_of_loot:dragon_bamboo_trapdoor",
+    "labyrinths_of_loot:dragon_bamboo_fence_gate",
+    "labyrinths_of_loot:dragon_bamboo_pressure_plate",
+    "labyrinths_of_loot:dragon_bamboo_stairs"
   ]
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_fence_gate",
+  "textures": {
+    "texture": "labyrinths_of_loot:block/dragon_bamboo_planks"
+  }
+}

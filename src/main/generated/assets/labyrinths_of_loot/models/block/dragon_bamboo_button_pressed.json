@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "labyrinths_of_loot:block/dragon_bamboo_planks"
+  }
+}
